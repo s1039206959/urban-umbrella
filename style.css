@@ -463,7 +463,7 @@ p {
 /* 强制限制logo尺寸（最终版本） */
 .logo-item img {
   width: auto !important;
-  height: 40px !important;   /* 👈 再压小一点 */
+  height: 60px !important;   /* 👈 再压小一点 */
   max-width: 120px !important;
   object-fit: contain;
 }
