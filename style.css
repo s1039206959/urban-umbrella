@@ -373,3 +373,39 @@ p {
 .case-image:hover img {
   transform: scale(1.06);
 }
+/* ===== LOGO 横向滚动 ===== */
+
+.logo-marquee {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.logo-track {
+  display: flex;
+  width: max-content;
+  animation: scrollLogo 20s linear infinite;
+}
+
+.logo-item {
+  min-width: 220px;
+  margin-right: 20px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
+/* 动画 */
+@keyframes scrollLogo {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.logo-marquee:hover .logo-track {
+  animation-play-state: paused;
+}
