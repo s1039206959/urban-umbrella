@@ -460,3 +460,18 @@ p {
   align-items: center;
   justify-content: center;
 }
+/* 强制限制logo尺寸（最终版本） */
+.logo-item img {
+  width: auto !important;
+  height: 40px !important;   /* 👈 再压小一点 */
+  max-width: 120px !important;
+  object-fit: contain;
+}
+.logo-item {
+  min-width: 160px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
